@@ -47,6 +47,15 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing', '1.0.4'
+  gem 'minitest', '5.11.3'
+  gem 'guard',  '2.16.2'
+  gem 'guard-minitest', '2.4.6'
+  gem 'rexml', '~> 3.2', '>= 3.2.4'
+end
+
+group :production do
+  gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
